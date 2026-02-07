@@ -39,7 +39,7 @@ body {
     padding: 12px 30px;
     font-size: 1rem;
     border: 2px solid #181d20;
-    border-radius: 25px;
+    border-radius: 8px;
     background: white;
     color: #181d20;
     cursor: pointer;
@@ -61,7 +61,7 @@ body {
 
 .calculator {
     background: white;
-    border-radius: 20px;
+    border-radius: 8px;
     padding: 30px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
@@ -106,7 +106,7 @@ body {
 .results-section {
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 8px;
     margin-bottom: 20px;
 }
 
@@ -121,7 +121,7 @@ body {
     padding: 15px;
     margin-bottom: 10px;
     background: white;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
