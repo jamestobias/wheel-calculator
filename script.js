@@ -20,6 +20,10 @@ const results = {
     finalOffset: document.getElementById('finalOffset')
 };
 
+// Canvas setup
+const canvas = document.getElementById('wheelCanvas');
+const ctx = canvas.getContext('2d');
+
 // Mode buttons
 const topMountBtn = document.getElementById('topMount');
 const backMountBtn = document.getElementById('backMount');
@@ -94,6 +98,60 @@ function calculate() {
     results.rollingDiameter.textContent = rollingDiameter.toFixed(2) + ' mm';
     results.overallHeight.textContent = overallHeight.toFixed(2) + ' inches';
     results.finalOffset.textContent = finalOffset.toFixed(2) + ' mm';
+    
+    // Draw wheel visualization
+    drawWheel();
+}
+
+// Draw animated wheel cross-section
+function drawWheel() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
+    const centerX = canvas.width / 2;
+    const centerY = canvas.height / 2;
+    const scale = 15;
+    
+    const width = parseFloat(inputs.width.value) * scale;
+    const diameter = parseFloat(inputs.diameter.value) * scale;
+    const outerRim = parseFloat(inputs.outerRim.value) * scale;
+    const innerRim = parseFloat(inputs.innerRim.value) * scale;
+    const padHeight = parseFloat(inputs.padHeight.value);
+    
+    // Wheel face
+    ctx.fillStyle = '#f0f0f0';
+    ctx.fillRect(centerX - width/2, centerY - diameter/2, width, diameter);
+    
+    // Outer lip (red accent)
+    ctx.fillStyle = '#fe4547';
+    ctx.fillRect(centerX - width/2, centerY - diameter/2, outerRim, diameter);
+    
+    // Inner lip (red accent)
+    ctx.fillStyle = '#fe4547';
+    ctx.fillRect(centerX + width/2 - innerRim, centerY - diameter/2, innerRim, diameter);
+    
+    // Center line
+    ctx.strokeStyle = '#333';
+    ctx.lineWidth = 2;
+    ctx.setLineDash([5, 5]);
+    ctx.beginPath();
+    ctx.moveTo(centerX, centerY - diameter/2 - 30);
+    ctx.lineTo(centerX, centerY + diameter/2 + 30);
+    ctx.stroke();
+    ctx.setLineDash([]);
+    
+    // Offset indicator (green dot)
+    const offsetX = centerX + (padHeight * 0.3);
+    ctx.fillStyle = '#28a745';
+    ctx.beginPath();
+    ctx.arc(offsetX, centerY, 8, 0, Math.PI * 2);
+    ctx.fill();
+    
+    // Labels
+    ctx.fillStyle = '#333';
+    ctx.font = 'bold 14px Arial';
+    ctx.textAlign = 'center';
+    ctx.fillText(`${inputs.diameter.value}"`, centerX, centerY + diameter/2 + 40);
+    ctx.fillText(`${inputs.width.value}"`, centerX, centerY - diameter/2 - 20);
 }
 
 // Initial calculation
