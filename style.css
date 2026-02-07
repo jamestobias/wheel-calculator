@@ -38,7 +38,7 @@ body {
 .mode-btn {
     padding: 12px 30px;
     font-size: 1rem;
-    border: 2px solid #181d20;
+    border: 1px solid #181d20;
     border-radius: 3px;
     background: white;
     color: #181d20;
@@ -87,7 +87,7 @@ body {
 }
 
 #wheelCanvas {
-    border: 2px solid #42413e;
+    border: 1px solid #42413e;
     border-radius: 3px;
 }
 
@@ -132,7 +132,7 @@ body {
 .primary-input {
     width: 100%;
     padding: 16px 18px;
-    border: 2px solid #42413e;
+    border: 1px solid #42413e;
     border-radius: 3px;
     font-size: 1.2rem;
     font-weight: 600;
@@ -173,7 +173,7 @@ body {
 .input-group input {
     width: 100%;
     padding: 12px;
-    border: 2px solid #42413e;
+    border: 1px solid #42413e;
     border-radius: 3px;
     font-size: 1rem;
     transition: border-color 0.3s ease;
@@ -191,7 +191,7 @@ body {
     padding: 20px;
     border-radius: 3px;
     margin-bottom: 20px;
-    border: 2px solid #42413e;
+    border: 1px solid #42413e;
 }
 
 .results-section.final {
