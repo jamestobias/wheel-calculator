@@ -232,6 +232,10 @@ body {
     color: #fe4547;
 }
 
+.results-section.final .result-label {
+    color: #1f1e1d;
+}
+
 .results-section.final .result-value {
     color: #fe4547;
     font-size: 1.5rem;
