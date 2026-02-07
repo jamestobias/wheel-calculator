@@ -126,10 +126,10 @@ body {
 
 .primary-input-group label {
     display: block;
-    font-weight: 600;
+    font-weight: bold;
     margin-bottom: 10px;
     color: #faf9f6;
-    font-size: 1.1rem;
+    font-size: 0.9em;
 }
 
 .primary-input {
