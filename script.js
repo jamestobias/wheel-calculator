@@ -1,5 +1,6 @@
 // Calculator state
 let currentMode = 'topMount';
+let currentOffsetX = 200; // Start at center
 
 // Get all input elements
 const inputs = {
@@ -139,11 +140,27 @@ function drawWheel() {
     ctx.stroke();
     ctx.setLineDash([]);
     
-    // Offset indicator (green dot)
-    const offsetX = centerX + (padHeight * 0.3);
+    // Animated offset indicator
+    const targetOffsetX = centerX + (padHeight * 0.3);
+    
+    // Smooth interpolation
+    currentOffsetX += (targetOffsetX - currentOffsetX) * 0.15;
+    
+    // Offset indicator (animated green dot with glow)
+    ctx.shadowBlur = 15;
+    ctx.shadowColor = '#28a745';
     ctx.fillStyle = '#28a745';
     ctx.beginPath();
-    ctx.arc(offsetX, centerY, 8, 0, Math.PI * 2);
+    ctx.arc(currentOffsetX, centerY, 10, 0, Math.PI * 2);
+    ctx.fill();
+    
+    // Reset shadow
+    ctx.shadowBlur = 0;
+    
+    // Inner white dot for contrast
+    ctx.fillStyle = 'white';
+    ctx.beginPath();
+    ctx.arc(currentOffsetX, centerY, 4, 0, Math.PI * 2);
     ctx.fill();
     
     // Labels
@@ -152,6 +169,11 @@ function drawWheel() {
     ctx.textAlign = 'center';
     ctx.fillText(`${inputs.diameter.value}"`, centerX, centerY + diameter/2 + 40);
     ctx.fillText(`${inputs.width.value}"`, centerX, centerY - diameter/2 - 20);
+    
+    // Continue animation if not at target
+    if (Math.abs(targetOffsetX - currentOffsetX) > 0.5) {
+        requestAnimationFrame(drawWheel);
+    }
 }
 
 // Initial calculation
