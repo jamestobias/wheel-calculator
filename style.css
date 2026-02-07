@@ -39,7 +39,7 @@ body {
     padding: 12px 30px;
     font-size: 1rem;
     border: 2px solid #181d20;
-    border-radius: 8px;
+    border-radius: 3px;
     background: white;
     color: #181d20;
     cursor: pointer;
@@ -66,14 +66,14 @@ body {
 
 .calculator {
     background: #262624;
-    border-radius: 8px;
+    border-radius: 3px;
     padding: 30px;
 }
 
 /* Visualization */
 .visualization {
     background: #262624;
-    border-radius: 8px;
+    border-radius: 3px;
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -88,13 +88,13 @@ body {
 
 #wheelCanvas {
     border: 2px solid #42413e;
-    border-radius: 8px;
+    border-radius: 3px;
 }
 
 /* Primary Controls Section */
 .primary-controls {
     background: #1f1e1d;
-    border-radius: 8px;
+    border-radius: 3px;
     padding: 24px;
     margin-bottom: 30px;
 }
@@ -136,7 +136,7 @@ body {
     width: 100%;
     padding: 16px 18px;
     border: 2px solid #42413e;
-    border-radius: 8px;
+    border-radius: 3px;
     font-size: 1.2rem;
     font-weight: 600;
     transition: all 0.2s ease;
@@ -177,7 +177,7 @@ body {
     width: 100%;
     padding: 12px;
     border: 2px solid #42413e;
-    border-radius: 8px;
+    border-radius: 3px;
     font-size: 1rem;
     transition: border-color 0.3s ease;
     background: #1f1e1d;
@@ -192,7 +192,7 @@ body {
 .results-section {
     background: #141413;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 3px;
     margin-bottom: 20px;
     border: 2px solid #42413e;
 }
@@ -208,7 +208,7 @@ body {
     padding: 15px;
     margin-bottom: 10px;
     background: #1f1e1d;
-    border-radius: 8px;
+    border-radius: 3px;
     border: 1px solid #42413e;
 }
 
