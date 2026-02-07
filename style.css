@@ -37,7 +37,7 @@ body {
 
 .mode-btn {
     padding: 12px 30px;
-    font-size: 1rem;
+    font-size: 0.9em;
     border: 1px solid #181d20;
     border-radius: 3px;
     background: white;
@@ -244,7 +244,7 @@ body {
     color: white;
     border: none;
     border-radius: 3px;
-    font-size: 16px;
+    font-size: 0.9em;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.2s ease;
