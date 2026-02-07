@@ -239,8 +239,7 @@ body {
 
 /* PDF Button */
 .pdf-button {
-    width: 100%;
-    padding: 16px;
+    padding: 14px 30px;
     background: #fe4547;
     color: white;
     border: none;
@@ -250,6 +249,7 @@ body {
     cursor: pointer;
     transition: all 0.2s ease;
     margin-top: 20px;
+    float: right;
 }
 
 .pdf-button:hover {
