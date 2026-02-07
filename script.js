@@ -119,7 +119,7 @@ function drawWheel() {
     const padHeight = parseFloat(inputs.padHeight.value);
     
     // Wheel face
-    ctx.fillStyle = '#f0f0f0';
+    ctx.fillStyle = '#42413e';
     ctx.fillRect(centerX - width/2, centerY - diameter/2, width, diameter);
     
     // Outer lip (red accent)
@@ -131,7 +131,7 @@ function drawWheel() {
     ctx.fillRect(centerX + width/2 - innerRim, centerY - diameter/2, innerRim, diameter);
     
     // Center line
-    ctx.strokeStyle = '#333';
+    ctx.strokeStyle = '#faf9f6';
     ctx.lineWidth = 2;
     ctx.setLineDash([5, 5]);
     ctx.beginPath();
@@ -164,7 +164,7 @@ function drawWheel() {
     ctx.fill();
     
     // Labels
-    ctx.fillStyle = '#333';
+    ctx.fillStyle = '#faf9f6';
     ctx.font = 'bold 14px Arial';
     ctx.textAlign = 'center';
     ctx.fillText(`${inputs.diameter.value}"`, centerX, centerY + diameter/2 + 40);
