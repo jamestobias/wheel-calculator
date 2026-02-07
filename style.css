@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -93,6 +93,70 @@ body {
 #wheelCanvas {
     border: 2px solid #e0e0e0;
     border-radius: 8px;
+}
+
+/* Primary Controls Section */
+.primary-controls {
+    background: linear-gradient(135deg, #fe4547 0%, #ff5759 100%);
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 20px rgba(254, 69, 71, 0.3);
+    border: 3px solid #fe4547;
+}
+
+.primary-title {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 8px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.primary-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.primary-input-group {
+    margin-bottom: 18px;
+}
+
+.primary-input-group:last-child {
+    margin-bottom: 0;
+}
+
+.primary-input-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 1.1rem;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.primary-input {
+    width: 100%;
+    padding: 16px 18px;
+    border: 3px solid white;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    background: white;
+    color: #2c2c2c;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.primary-input:focus {
+    outline: none;
+    border-color: #ffd700;
+    box-shadow: 0 0 0 4px rgba(255, 215, 0, 0.3), 0 4px 15px rgba(0,0,0,0.3);
+    transform: scale(1.02);
 }
 
 .input-section {

@@ -19,8 +19,38 @@
 
         <div class="calculator-grid">
             <div class="calculator">
+                <!-- PRIMARY CONTROLS -->
+                <section class="primary-controls">
+                    <h2 class="primary-title">⚙️ Primary Controls</h2>
+                    <p class="primary-subtitle">These values determine your final offset</p>
+                    
+                    <div class="primary-input-group">
+                        <label>Width (inches)</label>
+                        <input type="number" id="width" value="10.5" step="0.5" class="primary-input">
+                    </div>
+                    
+                    <div class="primary-input-group">
+                        <label>Pad Height (mm)</label>
+                        <input type="number" id="padHeight" value="-2" step="0.1" class="primary-input">
+                    </div>
+                    
+                    <div class="primary-input-group">
+                        <label>Outer Rim Width (inches)</label>
+                        <input type="number" id="outerRim" value="3.5" step="0.5" class="primary-input">
+                    </div>
+                </section>
+
+                <!-- FINAL OFFSET RESULT -->
+                <section class="results-section final">
+                    <div class="result-item highlight">
+                        <span class="result-label">Final Offset:</span>
+                        <span class="result-value" id="finalOffset">-</span>
+                    </div>
+                </section>
+
+                <!-- TIRE SPECS -->
                 <section class="input-section">
-                    <h2>Rolling Diameter</h2>
+                    <h2>Tire Specifications</h2>
                     <div class="input-group">
                         <label>Section Width (mm)</label>
                         <input type="number" id="secWidth" value="255" step="1">
@@ -46,34 +76,16 @@
                     </div>
                 </section>
 
+                <!-- ADDITIONAL WHEEL SPECS -->
                 <section class="input-section">
-                    <h2>Wheel Specifications</h2>
-                    <div class="input-group">
-                        <label>Width (inches)</label>
-                        <input type="number" id="width" value="10.5" step="0.5">
-                    </div>
+                    <h2>Additional Specifications</h2>
                     <div class="input-group">
                         <label>PCD + Holes</label>
                         <input type="text" id="pcd" value="5x114.3">
                     </div>
                     <div class="input-group">
-                        <label>Pad Height (mm)</label>
-                        <input type="number" id="padHeight" value="-2" step="0.1">
-                    </div>
-                    <div class="input-group">
-                        <label>Outer Rim Width (inches)</label>
-                        <input type="number" id="outerRim" value="3.5" step="0.5">
-                    </div>
-                    <div class="input-group">
                         <label>Inner Rim Width (inches)</label>
                         <input type="number" id="innerRim" value="6.5" step="0.5">
-                    </div>
-                </section>
-
-                <section class="results-section final">
-                    <div class="result-item highlight">
-                        <span class="result-label">Final Offset:</span>
-                        <span class="result-value" id="finalOffset">-</span>
                     </div>
                 </section>
             </div>
