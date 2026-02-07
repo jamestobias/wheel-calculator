@@ -132,7 +132,7 @@ function drawWheel() {
     
     // Center line
     ctx.strokeStyle = '#faf9f6';
-    ctx.lineWidth = 2;
+    ctx.lineWidth = 1;
     ctx.setLineDash([5, 5]);
     ctx.beginPath();
     ctx.moveTo(centerX, centerY - diameter/2 - 30);
