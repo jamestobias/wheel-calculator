@@ -83,7 +83,7 @@ body {
 .visualization h3 {
     color: #faf9f6;
     margin-bottom: 20px;
-    font-size: 1.1rem;
+    font-size: 16px;
 }
 
 #wheelCanvas {
@@ -101,7 +101,7 @@ body {
 }
 
 .primary-title {
-    font-size: 1.5rem;
+    font-size: 16px;
     color: white;
     margin-bottom: 8px;
     font-weight: 600;
@@ -157,7 +157,7 @@ body {
 }
 
 .input-section h2 {
-    font-size: 1.5rem;
+    font-size: 16px;
     color: #faf9f6;
     margin-bottom: 20px;
     border-bottom: 2px solid #42413e;
