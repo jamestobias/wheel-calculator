@@ -237,6 +237,26 @@ body {
     font-size: 1.5rem;
 }
 
+/* PDF Button */
+.pdf-button {
+    width: 100%;
+    padding: 16px;
+    background: #fe4547;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 20px;
+}
+
+.pdf-button:hover {
+    background: #ff5759;
+    transform: translateY(-2px);
+}
+
 @media (max-width: 1200px) {
     .calculator-grid {
         grid-template-columns: 1fr;
