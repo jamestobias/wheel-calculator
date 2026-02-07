@@ -100,13 +100,10 @@ body {
 }
 
 .primary-title {
-    font-size: 16px;
+    font-size: 18px;
     color: #faf9f6;
     margin-bottom: 8px;
     font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
 
 .primary-subtitle {
